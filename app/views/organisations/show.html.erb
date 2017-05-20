@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @organisation.user %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @organisation.name %>
+</p>
+
+<p>
+  <strong>Service type:</strong>
+  <%= @organisation.service_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @organisation.description %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @organisation.address %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @organisation.postcode %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @organisation.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @organisation.country %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @organisation.telephone %>
+</p>
+
+<%= link_to 'Edit', edit_organisation_path(@organisation) %> |
+<%= link_to 'Back', organisations_path %>

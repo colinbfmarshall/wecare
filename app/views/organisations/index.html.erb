@@ -1,0 +1,26 @@
+<div class="row">
+  <p id="notice"><%= notice %></p>
+  <h1>Organisations</h1>
+  <hr>
+  <% @organisations.each do |organisation| %>
+    
+    <div class="col-lg-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4><%= organisation.name %></h4>
+        </div>
+        <div class="panel-body">
+          <p><%= organisation.service_type %></p>
+          <p><%= organisation.description %></p>
+          <p><%= organisation.address %></p>
+          <p><%= organisation.postcode %></p>
+          <p><%= organisation.city %></p>
+          <p><%= organisation.telephone %></p>
+          <p><%= organisation.country %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>  
+</div>
+
+<%= link_to 'New Organisation', new_organisation_path %>

@@ -1,0 +1,16 @@
+<%= simple_form_for(@organisation) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :service_type, collection: ['Acute services (ACS)', 'Hyperbaric chamber services (HBC)', 'Hospice services (HPS)', 'Long-term conditions services (LTC)', ' Hospital services for people with mental health needs, and/or learning disabilities, and/or problems with substance misuse (MLS)', 'Prison healthcare services (PHS)', 'Rehabilitation services (RHS)', 'Residential substance misuse treatment/ rehabilitation services (RSM)', 'Community healthcare services (CHC)', 'Doctors consultation services (DCS)', 'Doctors treatment services (DTS)', 'Dental services (DEN)', 'Diagnostic and/or screening services (DSS)', 'Community-based services for people with a learning disability (LDC)', 'Mobile doctors services (MBS)', 'Community-based services for people with mental health needs (MHC)', 'Community-based services for people who misuse substances (SMC)', 'Urgent care services (UCS)', 'Care home services with nursing (CHN)', 'Care home services without nursing (CHS)', 'Specialist college services (SPC)', 'Domiciliary care services including those provided for children (DCC)', 'Extra care housing services (EXC)', 'Shared Lives (formerly known as Adult Placement) (SHL)', 'Supported living services (SLS)', 'Ambulance services (AMB)', 'Blood and transplant services (BTS)', 'Remote clinical advice services (RCA)'] %>
+    <%= f.input :description %>
+    <%= f.input :address %>
+    <%= f.input :postcode %>
+    <%= f.input :telephone %>
+  </div>
+  <hr>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
